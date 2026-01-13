@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+</head>
+<body>
+
+<h2>Image Map Example</h2>
+<p>Click on laptop, book or coffee</p>
+
+<img src="C:\Users\LENOVO\OneDrive\Documents\FSD\scene1.jpeg"
+     alt="Study Table"
+     usemap="#studymap"
+     width="500"
+     height="350">
+
+<map name="studymap">
+
+    <!-- Laptop (left side) -->
+    <area shape="rect"
+          coords="20,120,180,300"
+          href="C:\Users\LENOVO\OneDrive\Documents\FSD\laptop.html.jpeg"
+          alt="Laptop">
+
+    <!-- Book (center) -->
+    <area shape="rect"
+          coords="190,100,350,280"
+          href="C:\Users\LENOVO\OneDrive\Documents\FSD\books.html.jpeg"
+          alt="Book">
+
+    <!-- Coffee (right side) -->
+   <area shape="circle"
+      coords="440,228,45"
+      href="C:\Users\LENOVO\OneDrive\Documents\FSD\coffee.html.jpeg"
+      alt="Coffee">
+</map>
+
+</body>
+</html>
