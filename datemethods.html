@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Object Example</title>
+</head>
+<body>
+  <button onclick="dateDemo()">Run Date Demo</button>
+
+  <script>
+    function dateDemo() {
+      // Create a Date object
+      let now = new Date();
+
+      // Properties (via methods)
+      let year = now.getFullYear();      // Current year
+      let month = now.getMonth() + 1;    // Month (0–11, so add 1)
+      let day = now.getDate();           // Day of the month
+      let hours = now.getHours();        // Current hour
+      let minutes = now.getMinutes();    // Current minute
+      let seconds = now.getSeconds();    // Current second
+
+      // Method: toDateString
+      let dateString = now.toDateString();
+
+      // Method: toLocaleTimeString
+      let timeString = now.toLocaleTimeString();
+
+      // Show results
+      alert("Today is: " + dateString +
+            "\nTime is: " + timeString +
+            "\nYear: " + year +
+            "\nMonth: " + month +
+            "\nDay: " + day +
+            "\nHour: " + hours +
+            "\nMinute: " + minutes +
+            "\nSecond: " + seconds);
+    }
+  </script>
+</body>
+</html>

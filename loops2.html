@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const student = {name:"Ravi", age:20, branch:"CSE"};
+
+// for-in loop (for object)
+document.write("Using for-in:<br>");
+for (let key in student) {
+  document.write(key + " : " + student[key] + "<br>");
+}
+
+// for-each loop (using array)
+document.write("<br>Using for-each:<br>");
+Object.entries(student).forEach(function(item){
+  document.write(item[0] + " : " + item[1] + "<br>");
+});
+
+// for-of loop
+document.write("<br>Using for-of:<br>");
+for (let [key,value] of Object.entries(student)) {
+  document.write(key + " : " + value + "<br>");
+}
+</script>
+</body>
+</html>

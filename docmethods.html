@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Example</title>
+</head>
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <p id="paragraph">This is a sample paragraph.</p>
+  <button onclick="changeContent()">Click Me</button>
+  <button onclick="showInfo()">Show Document Info</button>
+
+  <script>
+    // Method: getElementById
+    function changeContent() {
+      let para = document.getElementById("paragraph");
+      para.innerHTML = "The content has been changed using document methods!";
+    }
+
+    // Properties: title, URL, lastModified
+    function showInfo() {
+      alert("Document Title: " + document.title +
+            "\nDocument URL: " + document.URL +
+            "\nLast Modified: " + document.lastModified);
+    }
+  </script>
+</body>
+</html>

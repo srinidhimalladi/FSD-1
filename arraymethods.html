@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Object Example</title>
+</head>
+<body>
+  <button onclick="arrayDemo()">Run Array Demo</button>
+
+  <script>
+    function arrayDemo() {
+      // Create an array
+      let fruits = ["Apple", "Banana", "Mango"];
+
+      // Property: length
+      alert("Number of fruits: " + fruits.length);
+
+      // Method: push (add at end)
+      fruits.push("Orange");
+
+      // Method: pop (remove last)
+      let removed = fruits.pop();
+
+      // Method: join (convert to string)
+      let fruitString = fruits.join(", ");
+
+      // Method: sort (alphabetical order)
+      fruits.sort();
+
+      // Show results
+      alert("Removed fruit: " + removed +
+            "\nFruits as string: " + fruitString +
+            "\nSorted fruits: " + fruits);
+    }
+  </script>
+</body>
+</html>

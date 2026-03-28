@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object Example</title>
+</head>
+<body>
+  <button onclick="mathDemo()">Run Math Demo</button>
+
+  <script>
+    function mathDemo() {
+      // Properties
+      let piValue = Math.PI;       // Value of π
+      let eValue = Math.E;         // Euler's number
+
+      // Methods
+      let squareRoot = Math.sqrt(25);       // Square root
+      let power = Math.pow(2, 3);           // 2^3
+      let randomNum = Math.random();        // Random number between 0 and 1
+      let rounded = Math.round(4.7);        // Round to nearest integer
+      let maxNum = Math.max(10, 20, 5);     // Largest number
+      let minNum = Math.min(10, 20, 5);     // Smallest number
+
+      // Show results
+      alert("Math.PI = " + piValue +
+            "\nMath.E = " + eValue +
+            "\nSquare root of 25 = " + squareRoot +
+            "\n2^3 = " + power +
+            "\nRandom number = " + randomNum +
+            "\nRounded 4.7 = " + rounded +
+            "\nMax(10,20,5) = " + maxNum +
+            "\nMin(10,20,5) = " + minNum);
+    }
+  </script>
+</body>
+</html>

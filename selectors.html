@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Forms</title>
+
+    <style>
+                p {
+            color: blue;
+        }
+        #main {
+            background-color: lightyellow;
+            padding: 10px;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        h1, h2 {
+            color: green;
+        }
+        * {
+            font-family: Arial;
+        }
+        div p {
+            font-style: italic;
+        }
+        div > h2 {
+            color: purple;
+        }
+        h2 + p {
+            background-color: lightgray;
+        }
+        h2 ~ p {
+            border-left: 4px solid orange;
+            padding-left: 5px;
+        }
+        a:hover {
+            color: red;
+        }
+
+        li:first-child {
+            color: darkblue;
+        }
+        p::first-letter {
+            font-size: 25px;
+            color: brown;
+        }
+        input[type="text"] {
+            background-color: lightpink;
+        }
+
+        input[type="password"] {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selector Forms</h1>
+
+    <div id="main">
+        <p>This paragraph uses element selector.</p>
+        <p class="highlight">This paragraph uses class selector.</p>
+        <span>Child selector applied here</span>
+    </div>
+
+    <h2>Combinator Example</h2>
+    <p>Adjacent sibling paragraph</p>
+    <p>General sibling paragraph</p>
+
+    <h2>Pseudo Class & Element</h2>
+    <a href="#">Hover over this link</a>
+
+    <h2>Attribute Selector</h2>
+    <form>
+        Username: <input type="text"><br><br>
+        Password: <input type="password">
+    </form>
+
+</body>
+</html>

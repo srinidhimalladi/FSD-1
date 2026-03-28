@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Regex Object Example</title>
+</head>
+<body>
+  <button onclick="regexDemo()">Run Regex Demo</button>
+
+  <script>
+    function regexDemo() {
+      // Create a regex object
+      let pattern = /JavaScript/i;   // 'i' makes it case-insensitive
+      let text = "I love learning JavaScript!";
+
+      // Property: source
+      let sourceVal = pattern.source;
+
+      // Property: flags
+      let flagsVal = pattern.flags;
+
+      // Method: test (returns true/false)
+      let testResult = pattern.test(text);
+
+      // Method: exec (returns match details)
+      let execResult = pattern.exec(text);
+
+      // Method: match (string method using regex)
+      let matchResult = text.match(pattern);
+
+      // Show results
+      alert("Regex source: " + sourceVal +
+            "\nRegex flags: " + flagsVal +
+            "\nTest result: " + testResult +
+            "\nExec result: " + execResult +
+            "\nMatch result: " + matchResult);
+    }
+  </script>
+</body>
+</html>

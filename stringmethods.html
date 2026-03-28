@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Object Example</title>
+</head>
+<body>
+  <button onclick="stringDemo()">Run String Demo</button>
+
+  <script>
+    function stringDemo() {
+      // Create a string
+      let text = "Hello JavaScript World";
+
+      // Property: length
+      let lengthVal = text.length;
+
+      // Methods
+      let upperVal = text.toUpperCase();       // Convert to uppercase
+      let lowerVal = text.toLowerCase();       // Convert to lowercase
+      let sliceVal = text.slice(6, 16);        // Extract substring
+      let indexVal = text.indexOf("World");    // Find position of substring
+      let replaceVal = text.replace("World", "Universe"); // Replace substring
+
+      // Show results
+      alert("Original text: " + text +
+            "\nLength: " + lengthVal +
+            "\nUppercase: " + upperVal +
+            "\nLowercase: " + lowerVal +
+            "\nSlice (6–16): " + sliceVal +
+            "\nIndex of 'World': " + indexVal +
+            "\nAfter replace: " + replaceVal);
+    }
+  </script>
+</body>
+</html>
